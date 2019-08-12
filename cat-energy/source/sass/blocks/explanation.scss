@@ -1,0 +1,196 @@
+.explanation__wrapper {
+  margin: 0 auto;
+  width: 87.5%;
+  margin-bottom: 33px;
+}
+
+.explanation__title {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.explanation__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.explanation__item {
+  position: relative;
+  min-height: 80px;
+}
+
+.explanation__item::before {
+  position: absolute;
+  content: "";
+  top: 11px;
+  left: 0;
+  background-color: #68b738;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+}
+
+.explanation__item--leaf::before {
+  background-image: url("../img/advantage-leaf@1x.png");
+  background-position: center;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+}
+
+.explanation__item--powder::before {
+  background-image: url("../img/advantage-powder@1x.png");
+  background-position: center;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+}
+
+.explanation__item--dining::before {
+  background-image: url("../img/advantage-dining@1x.png");
+  background-position: center;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+}
+
+.explanation__item--clock::before {
+  background-image: url("../img/advantage-clock@1x.png");
+  background-position: center;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+}
+
+.explanation__description {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 80px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+@media (min-width: 768px) {
+  .explanation__wrapper {
+    width: 92%;
+  }
+
+  .explanation__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 45px;
+    padding-bottom: 61px;
+  }
+
+  .explanation__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 111px;
+    padding-left: 0;
+    width: 78%;
+  }
+
+  .explanation__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .explanation__item {
+    width: 46%;
+    padding-bottom: 108px;
+  }
+
+  .explanation__item:nth-last-child(-n+2) {
+    padding-bottom: 88px;
+  }
+
+  .explanation__item::before {
+    top: 11px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+  }
+
+  .explanation__item::after {
+    position: absolute;
+    z-index: -1;
+    font-size: 281px;
+    line-height: 281px;
+    opacity: 0.1;
+  }
+
+  .explanation__item--leaf::after {
+    top: -29px;
+    right: 96px;
+    content: "1";
+  }
+
+  .explanation__item--powder::after {
+    top: -29px;
+    right: 78px;
+    content: "2";
+  }
+
+  .explanation__item--dining::after {
+    top: -29px;
+    right: 78px;
+    content: "3";
+  }
+
+  .explanation__item--clock::after {
+    top: -29px;
+    right: 74px;
+    content: "4";
+  }
+}
+
+@media (min-width: 1300px) {
+  .explanation__wrapper {
+    width: 1220px;
+    margin: 0 auto 0;
+  }
+
+  .explanation__item {
+    width: 20%;
+  }
+
+  .explanation__item--leaf::after {
+    right: 15px;
+  }
+
+  .explanation__item--powder::after {
+    right: 0;
+  }
+
+  .explanation__item--dining::after {
+    right: 0;
+  }
+
+  .explanation__item--clock::after {
+    right: 0;
+  }
+
+  .explanation__description {
+    width: 100%;
+  }
+
+  .explanation__list .explanation__item {
+    padding-bottom: 40px;
+  }
+}

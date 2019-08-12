@@ -1,0 +1,27 @@
+.button {
+  display: flex;
+  background-color: #68b738;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
+}
+
+@media (min-width: 768px) {
+  .button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

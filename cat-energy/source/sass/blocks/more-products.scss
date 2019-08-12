@@ -1,0 +1,317 @@
+.more-products {
+  overflow: hidden;
+}
+
+.more-products__wrapper {
+  width: 87.5%;
+  margin: 0 auto;
+}
+
+.more-products__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-top: 28px;
+  padding-bottom: 34px;
+  padding-right: 22px;
+  position: relative;
+  display: inline-flex;
+  background-color: #ffffff;
+}
+
+.more-products__title::after {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 3px;
+  background-color: #67b737;
+  top: 42px;
+  z-index: -1;
+}
+
+.more-products__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 39px;
+}
+
+.more-products__item {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #d9d9d9;
+  padding-bottom: 16px;
+}
+
+.more-products__item-title {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 14px;
+  padding-bottom: 5px;
+  width: 70%;
+}
+
+.more-products__weight,
+.more-products__price {
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Arial", sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 50%;
+  padding-top: 8px;
+  padding-bottom: 15px;
+}
+
+.more-products__price {
+  text-align: right;
+}
+
+.more-products__button {
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.more-products__promo {
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.more-products__promo-link {
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat top center;
+  width: 280px;
+  background-color: #63a73a;
+  position: relative;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px 289px;
+  }
+}
+
+.more-products__promo-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  width: 170px;
+  padding-top: 187px;
+  padding-bottom: 42px;
+  position: relative;
+}
+
+.more-products__promo-link::before {
+  position: absolute;
+  content: "";
+  width: 55px;
+  height: 60px;
+  top: 65px;
+  left: 113px;
+  background: url("../img/icon-gift.svg") no-repeat top center;
+}
+
+.more-products__wrapper-desc {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .more-products__wrapper {
+    width: 92%;
+  }
+
+  .more-products__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 36px;
+    padding-right: 37px;
+    margin-bottom: 70px;
+  }
+
+  .more-products__title::after {
+    top: 31px;
+  }
+
+  .more-products__title::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 3px;
+    background-color: #67b737;
+    top: 31px;
+    z-index: -1;
+    right: 0;
+  }
+
+  .more-products__item {
+    padding-left: 37px;
+    padding-right: 37px;
+    justify-content: space-between;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    padding-bottom: 26px;
+  }
+
+  .more-products__item-title {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 26px;
+    width: auto;
+  }
+
+  .more-products__price,
+  .more-products__weight {
+    font-size: 16px;
+    line-height: 20px;
+    width: auto;
+    padding-top: 30px;
+  }
+
+  .more-products__weight {
+    width: 68%;
+    text-align: right;
+  }
+
+  .more-products__wrapper-desc {
+    width: 47%;
+    margin-bottom: 7px;
+  }
+
+  .more-products__list {
+    margin-bottom: 70px;
+  }
+
+  .more-products__promo-link {
+    width: 100%;
+    justify-content: flex-end;
+    position: relative;
+    background: url("../img/gift-photo-tablet@1x.jpg") no-repeat top center;
+    background-size: cover;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .more-products__promo-link::before {
+    position: absolute;
+    content: "";
+    width: 55px;
+    height: 60px;
+    top: 65px;
+    left: 90px;
+    background: url("../../img/icon-gift.svg") no-repeat 0 0;
+  }
+
+  .more-products__promo-title {
+    padding-top: 73px;
+    padding-bottom: 67px;
+    padding-right: 114px;
+    text-align: left;
+  }
+
+  .more-products__promo {
+    margin-bottom: 75px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .more-products__wrapper {
+    width: 1220px;
+    margin-top: 10px;
+  }
+
+  .more-products__title {
+    padding-left: 0;
+  }
+
+  .more-products__title::before {
+    right: 414px;
+  }
+
+  .more-products__item {
+    border-left: 0;
+    border-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    justify-content: flex-start;
+  }
+
+  .more-products__list {
+    width: 895px;
+  }
+
+  .more-products__item-title {
+    width: 245px;
+    margin-right: 80px;
+  }
+
+  .more-products__wrapper-desc {
+    width: 285px;
+    margin-right: 40px;
+    margin-bottom: 6px;
+  }
+
+  .more-products__weight {
+    text-align: left;
+  }
+
+  .more-products__button {
+    width: 245px;
+    align-self: center;
+  }
+
+  .more-products__price {
+    width: 32%;
+  }
+
+  .more-products--desktop {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .more-products__promo-link {
+    width: 245px;
+    justify-content: center;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 245px 289px;
+    }
+  }
+
+  .more-products__promo-title {
+    text-align: center;
+    padding-right: 0;
+    padding-top: 188px;
+    padding-bottom: 38px;
+  }
+
+  .more-products__promo-link::before {
+    left: 96px;
+  }
+}
